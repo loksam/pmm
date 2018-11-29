@@ -1,0 +1,15 @@
+{
+  "name": "pmm",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "pmm": "./bin/index.js"
+  },  
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio-httpcli": "^0.7.3",
+    "commander": "^2.19.0"
+  }
+}
