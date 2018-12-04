@@ -4,6 +4,7 @@ const program = require('commander');
 
 const list = require('../lib/list');
 const search = require('../lib/search');
+const global = require('../lib/global');
 
 /*******************************************/
 
@@ -27,6 +28,15 @@ program
 
     .action(function (package) {
         search(package);
+    });
+
+program
+    .command('global <manager> <package>') 
+    .alias('g') 
+    .description('Global setting for package') 
+
+    .action(function (manager, package) {
+        global(manager, package);
     });
 
 program.parse(process.argv);
